@@ -25,5 +25,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         /* Shema::defaultStringLength(191); */
+
     }
 }

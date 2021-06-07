@@ -7,6 +7,11 @@ use App\Models\Articulo;
 
 class ArticuloController extends Controller
 {
+    //valida el ingreso a cualquier ruta en caso de no hacer login
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *

@@ -1,8 +1,12 @@
-@extends('layouts.PlantillaBase')
+@extends('adminlte::page')
 
+@section('title', 'Dashboard')
 
+@section('content_header')
+    <h1>CREATE</h1>
+@stop
 
-@section('contenido')
+@section('content')
 <br>
     <br>
     <h2>Crear Registro</h2>
@@ -32,5 +36,12 @@
         <a href="/articulos" class="btn btn-secondary" tablaindex="5">Cancelar</a>
         <button type="submit" class="btn btn-primary">Guardar</button>
     </form>
+@stop
 
-@endsection
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+@section('js')
+    <script> console.log('Hi!'); </script>
+@stop
